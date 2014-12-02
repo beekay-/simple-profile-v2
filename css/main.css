@@ -1,0 +1,332 @@
+/*  Author: Bilal Karim
+    Version: 3.0
+    Codename: Silver Surfer
+*/
+
+/* MAIN */
+
+html, body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+}
+.intro {
+    background: #24262D;
+    width: 100%;
+    height: auto;
+    color: #FFF;
+    padding: 2% 0;
+    float: left;
+}
+.intro-content, .geo-content, .creative-content, .qual-content, .end-content {
+    width: 80%;
+    margin: 6% 10%;
+    float: left;
+}
+.name { 
+    font-size: 2em;
+    letter-spacing: -3px;
+    font-weight: 400;
+    text-shadow: 0 1px 1px #17181C;
+    text-decoration: none;
+}
+.short-bio {
+    font-size: 0.8em;
+    text-shadow: 0 1px 1px #17181C;
+    width: 30%;
+}
+.menu {
+    float: right;
+    margin-top: 4px;
+    font-size: 0.938em;
+    text-shadow: 0 1px 1px #17181C;
+}
+h1 { 
+    font-weight: 700;
+    margin: 12.5% 0;
+}
+.tagline {
+    font-size: 2.5em;
+    width: 70%;
+    letter-spacing: -4px;
+    text-shadow: 0 2px 1px #17181C;
+    line-height: 2em;
+}
+.read-on {
+    font-size: 0.938em;
+    text-shadow: 0 1px 1px #17181C;
+    float: left;
+}
+.arrow {
+    padding: 3px;
+    position: relative;
+    animation: bounce 1s infinite linear;
+    -webkit-animation: bounce 1s infinite linear;
+    -moz-animation: bounce 1s infinite linear;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#geo, .creative, .qual, .end {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.geo-title, .creative-title, .qual-title, .end-title { 
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    float: left;
+}
+.geo-work {
+    background: url('../img/heat-spread.jpg');
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30%;
+    float: left;
+    animation: scroll-heat 60s infinite linear;
+    -webkit-animation: scroll-heat 60s infinite linear;
+    -moz-animation: scroll-heat 60s infinite linear;
+}
+.creative-work {
+    background: url('../img/xeenat-spread.jpg');
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30%;
+    float: left;
+    animation: scroll-xee 60s infinite linear;
+    -webkit-animation: scroll-xee 60s infinite linear;
+    -moz-animation: scroll-xee 60s infinite linear;
+}
+.qual-work {
+    background: #E4E4E4;
+    width: 100%;
+    float: left;
+}
+.overlay { 
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.90;
+    filter: alpha(opacity=90);
+    -moz-filter: 0.90;
+    text-align: center;
+}
+.caption {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    margin: 13.5% 0;
+    font-size: 2em;
+    color: #FFF;
+}
+footer {
+    background: #24262D;
+    width: 100%;
+    padding: 4% 0;
+    color: #FFF;
+    text-shadow: 0 1px 1px #17181C;
+    float: left;
+}
+.social {
+    font-size: 0.75em;
+    float: left;
+    width: 30%;
+    margin: 0 10%;
+    line-height: 2em;
+}
+.top {
+    float: left;
+    font-size: 1.2em;
+}
+.copyright {  
+    font-size: 0.75em;
+    float: right;
+    margin: 0 10%;
+    width: 25%;
+    text-align: right;
+    line-height: 2em;
+}
+
+/* PARAGRAPHS & LINKS */
+
+p, ul {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #3B4052;
+    font-size: 0.938em;
+    line-height: 1.8em;
+    text-align: justify;
+    float: left;
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1% 8.4%;
+    overflow: hidden;
+    text-align: left;
+    width: 80%;
+}
+li {
+    float: left;
+    padding: 0 2% 0 2%;
+    margin: 1%;
+    border-radius: 4px;
+    background: #FFF;
+    border: 1px solid #DBDBDB;
+}
+li:first-child {
+    background: none;
+    border: none;
+    /*margin: 1% 0;
+    padding: 0 1% 0 0;*/
+}
+li:hover {
+    background: #24262D;
+    color: #FFF;
+    transition: color 0.3s linear;
+}
+li:first-child:hover {
+    background: none;
+    color: #3B4052;
+    transition: none;
+}
+a.home:link, a.home:hover, a.home:visited, a.home:active { 
+    text-decoration: none;
+    color: #FFF;
+}
+a.big-url:link, a.big-url:visited, a.big-url:active { 
+    text-decoration: none;
+    color: #FFF;
+}
+a.big-url:hover {
+    border-bottom: 3px solid #FB4100;
+}
+a.footer-links:link, a.footer-links:visited, a.footer-links:active {
+    text-decoration: none;
+    color: #FFF;
+}
+a.footer-links:hover {
+    border-bottom: 3px solid #FB4100;
+    padding-bottom: 2px;
+}
+a.nav:link {
+    color: #FFF;
+    text-decoration: none;
+}
+a.nav:hover {
+    border-bottom: 3px solid #FB4100;
+    padding-bottom: 2px;
+}
+a.nav:visited {
+    color: #FFF;
+}
+a.nav:active {
+    color: #FFF;
+}
+.fix-left { 
+    margin-left: 5px;
+}
+.fix-right {
+    margin-right: 5px;
+}
+a.para:link {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    color: #3B4052;
+    text-decoration: none;
+}
+a.para:hover {
+    border-bottom: 3px solid #FB4100;
+    padding-bottom: 2px;
+}
+a.para:visited {
+    color: #3B4052;
+}
+a.para:active {
+    color: #3B4052;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 480px) {
+    .name {
+        font-size: 1.5em;
+        letter-spacing: -1px;
+        float: left;
+    }
+    .menu {
+        float: right;
+        font-size: 0.5em;
+        margin-top: 10px;
+    }
+    .short-bio, .tagline, .intro {
+        float: left;
+    }
+    .short-bio, .read-on, footer {
+        width: 100%;
+        font-size: 0.7em;
+    }
+    .tagline, .caption {
+        font-size: 1.5em;
+    }
+    .caption { 
+        margin: 10.5%;
+    }
+    p, li {
+        font-size: 0.8em;
+    }
+    .intro-content, .geo-content, .creative-content, .qual-content, .end-content {
+        margin: 10% 10%;
+    }
+    .geo-title, .creative-title, .qual-title, .end-title {
+        font-size: 0.9em;
+        letter-spacing: 0;
+    }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+    .short-bio {
+        width: 50%;
+    }
+    .tagline {
+        width: 100%;
+    }
+    .caption {
+        margin: 12.6%;
+    }
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes scroll-xee {
+    from { background-position: 0 0; }
+    to { background-position: -1280px 0; }
+}
+@-webkit-keyframes scroll-heat {
+    from { background-position: -1280px 0; }
+    to { background-position: 0 0; }
+}
+@-webkit-keyframes bounce {
+    0%  { top: -4px; }
+    50% { top: 0; }
+    100% { top: -4px; }
+}
+@keyframes scroll-xee {
+    from { background-position: 0 0; }
+    to { background-position: -1280px 0; }
+}
+@keyframes scroll-heat {
+    from { background-position: 1280px 0; }
+    to { background-position: 0 0; }
+}
+@keyframes bounce {
+    0%  { top: -4px; }
+    50% { top: 0; }
+    100% { top: -4px; }
+}
